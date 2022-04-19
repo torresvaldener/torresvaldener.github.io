@@ -1,0 +1,79 @@
+.formacao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+/*formacao*/
+.formacao .subtitulo {
+  font-size: 4rem;
+  grid-row: 1;
+}
+/*estou cursando...*/
+.formacao-texto {
+  font-size: 1.3rem;
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+
+.faculdade-lista {
+  position: relative;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 10px;
+}
+
+.faculdade-lista::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 75px;
+  background-color: #141414;
+  position: absolute;
+  left: -4px;
+}
+
+.faculdade-tipo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cursos {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.idiomas {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.cursos h3,
+.idiomas h3 {
+  margin-bottom: 10px;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .faculdade-lista {
+    display: none;
+  }
+  .formacao-texto {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .cursos {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .idiomas {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}

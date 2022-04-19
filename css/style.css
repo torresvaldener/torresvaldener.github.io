@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Fira+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./projetos.css";
+@import "./formacao.css";
+@import "./footer.css";
